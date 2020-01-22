@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tic Tac Toe</h1>
+    </header>
+
+    <div class="scoreboard">
+      <div id="score" class="mark">Score</div>
+      <div id="user-label" class="mark">User</div>
+      <div id="comp-label" class="mark">Comp</div>
+      <div class="scoreboard-main">
+        <span id="user-score">0</span><span id="comp-score">0</span>
+      </div>
+    </div>
+
+    <div class="result">
+      <p>Your turn, place an X.</p>
+    </div>
+
+    <table class="table">
+      <tr id="top">
+        <td class="data" id="top-left"></td>
+        <td class="data" id="top-top"></td>
+        <td class="data" id="top-right"></td>
+      </tr>
+      <tr id="middle">
+        <td class="data" id="middle-left"></td>
+        <td class="data" id="middle-middle"></td>
+        <td class="data" id="middle-right"></td>
+      </tr>
+      <tr id="bottom">
+        <td class="data" id="bottom-left"></td>
+        <td class="data" id="bottom-bottom"></td>
+        <td class="data" id="bottom-right"></td>
+      </tr>
+    </table>
+
+    <div class="button"><button type="reset">New Game</button></div>
+    <script src="./app.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --border-font: 2px solid #ccc;
+  --scoreboard-color: black;
+}
+
+body {
+  background: #008577;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: grey;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.scoreboard {
+  position: relative;
+  width: 200px;
+  margin: 15px auto;
+  padding: 20px;
+  font-size: 35px;
+  color: white;
+}
+
+.mark {
+  background: var(--scoreboard-color);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 4px 4px 0 0;
+}
+
+#score {
+  border-radius: 0 0 4px 4px;
+  position: absolute;
+  text-align: center;
+  left: 20px;
+  right: 20px;
+  bottom: 3px;
+}
+
+#user-label {
+  position: absolute;
+  padding: 0 8px;
+  top: -2px;
+}
+
+#comp-label {
+  position: absolute;
+  padding: 0 3px;
+  right: 20px;
+  top: -2px;
+}
+
+.scoreboard-main {
+  border: 4px solid var(--scoreboard-color);
+  padding: 35px;
+}
+
+#user-score {
+  position: absolute;
+  left: 35px;
+  top: 40px;
+}
+
+#comp-score {
+  position: absolute;
+  text-align: center;
+  right: 35px;
+  top: 40px;
+}
+
+.result {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.table {
+  text-align: center;
+  margin: 10px auto;
+  font-size: 40px;
+  border-spacing: 0;
+}
+
+td {
+  width: 80px;
+  height: 80px;
+  transition: all 0.3s ease;
+}
+
+#top-left {
+  border-bottom: var(--border-font);
+  border-right: var(--border-font);
+}
+
+#top-top {
+  border-bottom: var(--border-font);
+  border-left: var(--border-font);
+  border-right: var(--border-font);
+}
+
+#top-right {
+  border-bottom: var(--border-font);
+  border-left: var(--border-font);
+}
+
+#middle-left {
+  border-top: var(--border-font);
+  border-bottom: var(--border-font);
+  border-right: var(--border-font);
+}
+
+#middle-middle {
+  border-top: var(--border-font);
+  border-bottom: var(--border-font);
+  border-left: var(--border-font);
+  border-right: var(--border-font);
+}
+
+#middle-right {
+  border-top: var(--border-font);
+  border-bottom: var(--border-font);
+  border-left: var(--border-font);
+}
+
+#bottom-left {
+  border-top: var(--border-font);
+  border-right: var(--border-font);
+}
+
+#bottom-bottom {
+  border-top: var(--border-font);
+  border-left: var(--border-font);
+  border-right: var(--border-font);
+}
+
+#bottom-right {
+  border-top: var(--border-font);
+  border-left: var(--border-font);
+}
+
+.data:hover {
+  background: #e4e4e4;
+  cursor: pointer;
+}
+
+.button {
+  text-align: center;
+}
+
+button {
+  margin: 30px;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+button:hover {
+  cursor: pointer;
+}
